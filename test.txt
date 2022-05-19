@@ -1,0 +1,5 @@
+1009
+0
+22222_0:0_1_StudentId_22222|1_0_Name_P. Patty|1_0_Address_56 Grape Blvd.|1_0_Phone_555-9999
+12345_0:0_1_StudentId_12345|1_0_Name_C. Brown|1_0_Address_12 Apple St.|1_0_Phone_555-1234
+67890_0:0_1_StudentId_67890|1_0_Name_L. Van Pelt|1_0_Address_34 Pear Ave.|1_0_Phone_555-5678

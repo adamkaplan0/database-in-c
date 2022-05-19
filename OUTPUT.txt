@@ -1,0 +1,499 @@
+/*
+ * File: OUTPUT.txt
+ * Creator: Adam Kaplan
+ * Time-stamp: November 27, 2016
+ * Project 4
+ */
+
+ PART 1:
+
+ Adding all of SNAP.
+ Adding all of CSG.
+ Adding all of CP.
+ Adding all of CDH.
+ Adding all of CR.
+
+ Printing all of the original databases.
+
+ SNAP:
+ StudentId = 22222
+ Name = P. Patty
+ Address = 56 Grape Blvd.
+ Phone = 555-9999
+
+
+ StudentId = 12345
+ Name = C. Brown
+ Address = 12 Apple St.
+ Phone = 555-1234
+
+
+ StudentId = 67890
+ Name = L. Van Pelt
+ Address = 34 Pear Ave.
+ Phone = 555-5678
+
+
+ CSG:
+ Course = EE200
+ StudentId = 22222
+ Grade = B+
+
+
+ Course = CS101
+ StudentId = 33333
+ Grade = A-
+
+
+ Course = CS101
+ StudentId = 12345
+ Grade = A
+
+
+ Course = EE200
+ StudentId = 12345
+ Grade = C
+
+
+ Course = CS101
+ StudentId = 67890
+ Grade = B
+
+
+ Course = PH100
+ StudentId = 67890
+ Grade = C+
+
+
+ CP:
+ Course = CS101
+ Prerequisite = CS100
+
+
+ Course = EE200
+ Prerequisite = EE005
+
+
+ Course = EE200
+ Prerequisite = CS100
+
+
+ Course = CS120
+ Prerequisite = CS101
+
+
+ Course = CS121
+ Prerequisite = CS120
+
+
+ Course = CS205
+ Prerequisite = CS101
+
+
+ Course = CS206
+ Prerequisite = CS121
+
+
+ Course = CS206
+ Prerequisite = CS205
+
+
+ CDH:
+ Course = CS101
+ Day = M
+ Hour = 9AM
+
+
+ Course = CS101
+ Day = W
+ Hour = 9AM
+
+
+ Course = CS101
+ Day = F
+ Hour = 9AM
+
+
+ Course = EE200
+ Day = Tu
+ Hour = 10AM
+
+
+ Course = EE200
+ Day = W
+ Hour = 1PM
+
+
+ Course = EE200
+ Day = Th
+ Hour = 10AM
+
+
+ CR:
+ Course = CS101
+ Room = Turing Aud.
+
+
+ Course = EE200
+ Room = 25 Ohm Hall
+
+
+ Course = PH100
+ Room = Newton Lab
+
+
+ Looking up C. Brown from SNAP.
+ StudentId = 12345
+ Name = C. Brown
+ Address = 12 Apple St.
+ Phone = 555-1234
+
+
+ Deleting C. Brown from SNAP.
+ Printing the SNAP database. (without C. Brown of course)
+ StudentId = 22222
+ Name = P. Patty
+ Address = 56 Grape Blvd.
+ Phone = 555-9999
+
+
+ StudentId = 67890
+ Name = L. Van Pelt
+ Address = 34 Pear Ave.
+ Phone = 555-5678
+
+
+ Inserting C. Brown to SNAP again.
+ Printing the SNAP database.
+ StudentId = 22222
+ Name = P. Patty
+ Address = 56 Grape Blvd.
+ Phone = 555-9999
+
+
+ StudentId = 12345
+ Name = C. Brown
+ Address = 12 Apple St.
+ Phone = 555-1234
+
+
+ StudentId = 67890
+ Name = L. Van Pelt
+ Address = 34 Pear Ave.
+ Phone = 555-5678
+
+
+ Looking up 12345 from CSG.
+ finished selection
+ Course = CS101
+ StudentId = 12345
+ Grade = A
+
+
+ Course = EE200
+ StudentId = 12345
+ Grade = C
+
+
+ Deleting ALL 12345 from CSG.
+ Printing the CSG database. (without 12345 of course)
+ Course = EE200
+ StudentId = 22222
+ Grade = B+
+
+
+ Course = CS101
+ StudentId = 33333
+ Grade = A-
+
+
+ Course = CS101
+ StudentId = 67890
+ Grade = B
+
+
+ Course = PH100
+ StudentId = 67890
+ Grade = C+
+
+
+ Inserting 12345 CS101 to CSG again.
+ Printing the CSG database.
+ Course = EE200
+ StudentId = 22222
+ Grade = B+
+
+
+ Course = CS101
+ StudentId = 33333
+ Grade = A-
+
+
+ Course = CS101
+ StudentId = 12345
+ Grade = A
+
+
+ Course = CS101
+ StudentId = 67890
+ Grade = B
+
+
+ Course = PH100
+ StudentId = 67890
+ Grade = C+
+
+
+ Saving SNAP database to test.txt.
+ Loading SNAP database from test.txt.
+ Printing loaded SNAP database.
+ StudentId = 22222
+ Name = P. Patty
+ Address = 56 Grape Blvd.
+ Phone = 555-9999
+
+
+
+ StudentId = 12345
+ Name = C. Brown
+ Address = 12 Apple St.
+ Phone = 555-1234
+
+
+
+ StudentId = 67890
+ Name = L. Van Pelt
+ Address = 34 Pear Ave.
+ Phone = 555-5678
+
+
+
+ PART 2:
+
+ What grade did C. Brown get in CS101? A
+ Where is C. Brown on Mondays at 9AM? Turing Aud.
+ 
+ PART 3:
+
+ Union of two SNAP tables, which are slightly different:
+ Original:
+ StudentId = 22222
+ Name = P. Patty
+ Address = 56 Grape Blvd.
+ Phone = 555-9999
+
+
+ StudentId = 12345
+ Name = C. Brown
+ Address = 12 Apple St.
+ Phone = 555-1234
+
+
+ StudentId = 67890
+ Name = L. Van Pelt
+ Address = 34 Pear Ave.
+ Phone = 555-5678
+
+
+ Different:
+ StudentId = 22223
+ Name = P. Patty Different
+ Address = 56 Grape Blvd.
+ Phone = 555-9999
+
+
+ StudentId = 12346
+ Name = C. Brown Different
+ Address = 12 Apple St.
+ Phone = 555-1234
+
+
+ StudentId = 67891
+ Name = L. Van Pelt Different
+ Address = 34 Pear Ave.
+ Phone = 555-5678
+
+
+ Union:
+ StudentId = 22222
+ Name = P. Patty
+ Address = 56 Grape Blvd.
+ Phone = 555-9999
+
+
+ StudentId = 22223
+ Name = P. Patty Different
+ Address = 56 Grape Blvd.
+ Phone = 555-9999
+
+
+ StudentId = 12345
+ Name = C. Brown
+ Address = 12 Apple St.
+ Phone = 555-1234
+
+
+ StudentId = 12346
+ Name = C. Brown Different
+ Address = 12 Apple St.
+ Phone = 555-1234
+
+
+ StudentId = 67890
+ Name = L. Van Pelt
+ Address = 34 Pear Ave.
+ Phone = 555-5678
+
+
+ StudentId = 67891
+ Name = L. Van Pelt Different
+ Address = 34 Pear Ave.
+ Phone = 555-5678
+
+
+ Intersection of two CR tables, which are slightly different:
+ Original:
+ Course = CS101
+ Room = Turing Aud.
+
+
+ Course = EE200
+ Room = 25 Ohm Hall
+
+
+ Course = PH100
+ Room = Newton Lab
+
+
+ Different:
+ Course = CS101
+ Room = Turing Aud.
+
+
+ Course = EE201
+ Room = 25 Ohm Hall
+
+
+ Course = PH100
+ Room = Newton Lab
+
+
+ Intersection:
+ Course = CS101
+ Room = Turing Aud.
+
+
+ Course = PH100
+ Room = Newton Lab
+
+
+ Difference of two CR tables, which are slightly different:
+ Original:
+ Course = CS101
+ Room = Turing Aud.
+
+
+ Course = EE200
+ Room = 25 Ohm Hall
+
+
+ Course = PH100
+ Room = Newton Lab
+
+
+ Different:
+ Course = CS101
+ Room = Turing Aud.
+
+
+ Course = EE201
+ Room = 25 Ohm Hall
+
+
+ Course = PH100
+ Room = Newton Lab
+
+
+ Difference:
+ Course = EE200
+ Room = 25 Ohm Hall
+
+
+ Selecting Course = CS101 from CSG:
+
+ Course = CS101
+ StudentId = 33333
+ Grade = A-
+
+
+ Course = CS101
+ StudentId = 12345
+ Grade = A
+
+
+ Course = CS101
+ StudentId = 67890
+ Grade = B
+
+
+ Projecting only the StudentIds from the previous table:
+
+ StudentId = 33333
+
+
+ StudentId = 12345
+
+
+ StudentId = 67890
+
+
+ Joining CDH and CR on Course:
+
+ Course = CS101
+ Day = M
+ Hour = 9AM
+ Room = Turing Aud.
+
+
+ Course = CS101
+ Day = W
+ Hour = 9AM
+ Room = Turing Aud.
+
+
+ Course = CS101
+ Day = F
+ Hour = 9AM
+ Room = Turing Aud.
+
+
+ Course = EE200
+ Day = Tu
+ Hour = 10AM
+ Room = 25 Ohm Hall
+
+
+ Course = EE200
+ Day = W
+ Hour = 1PM
+ Room = 25 Ohm Hall
+
+
+ Course = EE200
+ Day = Th
+ Hour = 10AM
+ Room = 25 Ohm Hall
+
+
+ Projecting Day, Hour from The selection of Room=Turing Aud. from the Join of CR and CDH;
+
+ Day = M
+ Hour = 9AM
+
+
+ Day = W
+ Hour = 9AM
+
+
+ Day = F
+ Hour = 9AM
